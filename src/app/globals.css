@@ -233,6 +233,41 @@ a:hover {
 ::-webkit-scrollbar-thumb:hover { background: var(--color-text-secondary); }
 
 /* ═══════════════════════════════════════════
+   OLIVE GREEN THEME UTILITY CLASSES
+   ═══════════════════════════════════════════ */
+
+.text-olive-light {
+  color: #B5C689 !important;
+  opacity: 1 !important;
+  -webkit-text-fill-color: #B5C689 !important;
+  background-image: none !important;
+  background-clip: unset !important;
+  -webkit-background-clip: unset !important;
+}
+
+.text-olive-light:hover {
+  color: #D4E2AF !important;
+  opacity: 1 !important;
+  -webkit-text-fill-color: #D4E2AF !important;
+}
+
+.text-olive-dark {
+  color: #4F5D2F !important;
+  opacity: 1 !important;
+  -webkit-text-fill-color: #4F5D2F !important;
+  font-weight: 700 !important;
+}
+
+.bg-olive-light {
+  background-color: #B5C689 !important;
+  opacity: 1 !important;
+}
+
+.border-olive-light {
+  border-color: #8A9B60 !important;
+}
+
+/* ═══════════════════════════════════════════
    UTILITY CLASSES
    ═══════════════════════════════════════════ */
 

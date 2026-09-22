@@ -63,8 +63,11 @@ export default function Home() {
           <CloudBackground />
           
           {/* Massive Faded Background Text */}
-          <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0 opacity-20 select-none overflow-hidden">
-            <span className="font-headline-hero text-[18vw] font-bold text-[#B5C689] whitespace-nowrap tracking-tighter">
+          <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0 select-none overflow-hidden" style={{ opacity: 0.22 }}>
+            <span 
+              className="font-headline-hero text-[18vw] font-bold text-olive-light whitespace-nowrap tracking-tighter"
+              style={{ color: '#B5C689', opacity: 1 }}
+            >
               KAREIXO
             </span>
           </div>
@@ -73,11 +76,17 @@ export default function Home() {
             {/* Text floating directly over the cloud background */}
             <div className="relative z-10 p-8 sm:p-12 max-w-4xl stagger-children flex flex-col items-center">
               
-              <h1 className="font-headline-hero text-5xl sm:text-6xl lg:text-[72px] leading-[1.05] tracking-[-0.02em] text-[#B5C689] font-bold relative z-10 drop-shadow-sm">
+              <h1 
+                className="text-olive-light font-headline-hero text-5xl sm:text-6xl lg:text-[72px] leading-[1.05] tracking-[-0.02em] font-bold relative z-10"
+                style={{ color: '#B5C689', opacity: 1, WebkitTextFillColor: '#B5C689' }}
+              >
                 Code review that can&apos;t hallucinate syntax.
               </h1>
 
-              <p className="font-body-base text-[clamp(1.125rem,2vw,1.25rem)] text-[#B5C689]/90 max-w-3xl mx-auto mt-6">
+              <p 
+                className="font-body-base text-[clamp(1.125rem,2vw,1.25rem)] text-olive-light max-w-3xl mx-auto mt-6"
+                style={{ color: '#B5C689', opacity: 0.9 }}
+              >
                 Kareixo reviews every pull request, patches bugs it's certain about, and heals failing tests — every patch is generated inside your code's actual syntax tree and re-validated before it ships.
               </p>
 
@@ -90,7 +99,8 @@ export default function Home() {
                 </a>
                 <Link
                   href="#features"
-                  className="font-body-base text-[#B5C689] hover:text-[#D4E2AF] underline underline-offset-4 decoration-[#B5C689]/50 hover:decoration-[#D4E2AF] transition-colors py-4 px-6 font-medium"
+                  className="text-olive-light font-body-base underline underline-offset-4 decoration-[#B5C689] transition-colors py-4 px-6 font-semibold"
+                  style={{ color: '#B5C689', opacity: 1 }}
                 >
                   See how it works
                 </Link>

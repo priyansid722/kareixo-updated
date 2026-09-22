@@ -93,10 +93,10 @@ const fragmentShader = /* glsl */ `
     // Increase contrast heavily to create distinct volumetric smoke clouds
     float smoke = smoothstep(0.2, 0.65, density);
 
-    // ── Color palette: Ice Cream Blue & Vanilla Cloud ──
-    vec3 baseBackground = vec3(0.055, 0.086, 0.078); // Kareixo canvas dark for blending
-    vec3 cloudMidTone   = vec3(0.784, 0.953, 1.0);   // #C8F3FF Ice Cream Blue
-    vec3 cloudGlow      = vec3(1.0, 0.973, 0.875);   // #FFF8DF Vanilla Cloud
+    // ── Color palette: Dark Forest & Olive Smoke (Consistently Dark Backdrop) ──
+    vec3 baseBackground = vec3(0.055, 0.086, 0.078); // #0E1614 Kareixo canvas dark
+    vec3 cloudMidTone   = vec3(0.08, 0.16, 0.12);    // Dark forest emerald smoke
+    vec3 cloudGlow      = vec3(0.12, 0.24, 0.18);    // Muted dark olive glow
 
     // Volumetric layering
     vec3 color = mix(baseBackground, cloudMidTone, smoke);
