@@ -63,8 +63,8 @@ export default function Home() {
           <CloudBackground />
           
           {/* Massive Faded Background Text */}
-          <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0 opacity-5 select-none overflow-hidden">
-            <span className="font-headline-hero text-[18vw] font-bold text-text-primary-dark whitespace-nowrap tracking-tighter">
+          <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0 opacity-20 select-none overflow-hidden">
+            <span className="font-headline-hero text-[18vw] font-bold text-[#B5C689] whitespace-nowrap tracking-tighter">
               KAREIXO
             </span>
           </div>
@@ -73,24 +73,24 @@ export default function Home() {
             {/* Text floating directly over the cloud background */}
             <div className="relative z-10 p-8 sm:p-12 max-w-4xl stagger-children flex flex-col items-center">
               
-              <h1 className="font-headline-hero text-5xl sm:text-6xl lg:text-[72px] leading-[1.05] tracking-[-0.02em] text-text-primary-dark font-bold relative z-10">
+              <h1 className="font-headline-hero text-5xl sm:text-6xl lg:text-[72px] leading-[1.05] tracking-[-0.02em] text-[#B5C689] font-bold relative z-10 drop-shadow-sm">
                 Code review that can&apos;t hallucinate syntax.
               </h1>
 
-              <p className="font-body-base text-[clamp(1.125rem,2vw,1.25rem)] text-text-secondary-dark max-w-3xl mx-auto mt-6">
+              <p className="font-body-base text-[clamp(1.125rem,2vw,1.25rem)] text-[#B5C689]/90 max-w-3xl mx-auto mt-6">
                 Kareixo reviews every pull request, patches bugs it's certain about, and heals failing tests — every patch is generated inside your code's actual syntax tree and re-validated before it ships.
               </p>
 
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10">
                 <a
                   href="https://github.com/apps/kareixo-reviewer/installations/new"
-                  className="btn btn-primary text-lg px-8 py-4"
+                  className="btn btn-primary text-lg px-8 py-4 bg-[#075E46] text-[#E8FFF2] hover:bg-[#09795A] shadow-lg transition-all"
                 >
                   Connect a repository
                 </a>
                 <Link
                   href="#features"
-                  className="font-body-base text-text-secondary-dark hover:text-text-primary-dark underline underline-offset-4 decoration-border hover:decoration-text-primary transition-colors py-4 px-6"
+                  className="font-body-base text-[#B5C689] hover:text-[#D4E2AF] underline underline-offset-4 decoration-[#B5C689]/50 hover:decoration-[#D4E2AF] transition-colors py-4 px-6 font-medium"
                 >
                   See how it works
                 </Link>
@@ -98,7 +98,7 @@ export default function Home() {
             </div>
             
             {/* Infrastructure line */}
-            <p className="mt-16 text-text-secondary font-label-ui uppercase tracking-widest text-xs bg-surface px-4 py-2 border border-border shadow-sm">
+            <p className="mt-16 text-[#B5C689] font-label-ui uppercase tracking-widest text-xs bg-[#0E1614]/80 backdrop-blur-md px-4 py-2 border border-[#B5C689]/30 rounded-md shadow-sm">
               Routed across Gemini, Groq, NVIDIA NIM, and Pollinations with automatic failover
             </p>
           </div>

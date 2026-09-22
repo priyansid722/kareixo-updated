@@ -52,7 +52,7 @@ export default function Navbar() {
           <div className="flex items-center gap-4">
             <Link
               href="/"
-              className="text-text-primary-dark font-semibold text-lg tracking-tight flex items-center gap-2.5 group"
+              className="text-white font-semibold text-lg tracking-tight flex items-center gap-2.5 group"
               onClick={() => setMobileMenuOpen(false)}
             >
               <Image
@@ -62,17 +62,19 @@ export default function Navbar() {
                 height={30}
                 className="rounded-lg object-contain transition-transform duration-300 group-hover:scale-110"
               />
-              <span className="font-headline-hero">Kareixo</span>
+              <span className="font-headline-hero text-white">Kareixo</span>
             </Link>
             
             <a 
               href="https://github.com/elixpo"
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden md:flex items-center gap-1.5 px-2 py-1 bg-surface-container/50 hover:bg-surface-container border border-border-default/50 rounded-md transition-colors"
+              className="hidden md:flex items-center gap-1.5 px-3 py-1 bg-[#B5C689] hover:bg-[#C5D699] border border-[#A5B679] rounded-full shadow-[0_0_12px_rgba(181,198,137,0.35)] transition-all duration-300 group"
             >
-              <span className="w-1.5 h-1.5 rounded-full bg-signal shadow-[0_0_8px_rgba(26,194,148,0.8)]" />
-              <span className="font-label-ui text-[10px] text-text-secondary-dark uppercase tracking-wider">Elixpo Ecosystem</span>
+              <span className="w-2 h-2 rounded-full bg-[#4F5D2F] shadow-[0_0_6px_#4F5D2F] animate-pulse" />
+              <span className="font-label-ui text-[10px] text-[#4F5D2F] font-bold uppercase tracking-wider transition-colors">
+                Elixpo Ecosystem
+              </span>
             </a>
           </div>
 
@@ -82,27 +84,27 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="relative px-3.5 py-2 text-sm font-medium text-fg-muted hover:text-fg-default transition-colors duration-200 rounded-lg group"
+                className="relative px-3.5 py-2 text-sm font-medium text-[#B5C689] hover:text-[#D4E2AF] transition-colors duration-200 rounded-lg group"
               >
                 {link.label}
-                <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-[2px] bg-signal rounded-full transition-all duration-300 group-hover:w-[60%]" />
+                <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-[2px] bg-[#B5C689] rounded-full transition-all duration-300 group-hover:w-[60%]" />
               </Link>
             ))}
             <a
               href="https://github.com/karanray06/Kareixo"
               target="_blank"
               rel="noopener noreferrer"
-              className="relative px-3.5 py-2 text-sm font-medium text-text-secondary-dark hover:text-text-primary-dark transition-colors duration-200 rounded-lg group flex items-center gap-1.5"
+              className="relative px-3.5 py-2 text-sm font-medium text-[#B5C689] hover:text-[#D4E2AF] transition-colors duration-200 rounded-lg group flex items-center gap-1.5"
             >
               <svg className="w-4 h-4" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
               GitHub
               {stars !== null && (
-                <span className="flex items-center gap-1 ml-1 text-[11px] bg-surface-container-dark/50 px-1.5 py-0.5 rounded font-badge-mono text-text-secondary-dark border border-border-dark/50">
-                  <Star size={10} className="fill-text-secondary-dark" />
+                <span className="flex items-center gap-1 ml-1 text-[11px] bg-[#3E4A24]/60 px-1.5 py-0.5 rounded font-badge-mono text-[#B5C689] border border-[#B5C689]/40">
+                  <Star size={10} className="fill-[#B5C689] text-[#B5C689]" />
                   {stars}
                 </span>
               )}
-              <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-[2px] bg-signal rounded-full transition-all duration-300 group-hover:w-[60%]" />
+              <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-[2px] bg-[#B5C689] rounded-full transition-all duration-300 group-hover:w-[60%]" />
             </a>
           </div>
 
@@ -110,13 +112,13 @@ export default function Navbar() {
           <div className="hidden md:flex items-center gap-3">
             <Link
               href="/dashboard"
-              className="text-sm font-medium text-text-secondary-dark hover:text-text-primary-dark transition-colors px-3 py-2"
+              className="text-sm font-medium text-[#B5C689] hover:text-[#D4E2AF] transition-colors px-3 py-2"
             >
               Sign in
             </Link>
             <a
               href="https://github.com/apps/kareixo-reviewer/installations/new"
-              className="btn btn-signal inline-flex items-center gap-2 px-4 py-2"
+              className="btn btn-signal inline-flex items-center gap-2 px-4 py-2 shadow-md hover:shadow-emerald-900/40"
             >
               <Plus size={16} />
               Get Started
@@ -126,7 +128,7 @@ export default function Navbar() {
           {/* Mobile hamburger */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden relative w-8 h-8 flex items-center justify-center text-text-secondary-dark hover:text-text-primary-dark transition-colors"
+            className="md:hidden relative w-8 h-8 flex items-center justify-center text-emerald-200 hover:text-white transition-colors"
             aria-label="Toggle menu"
           >
             <motion.span
